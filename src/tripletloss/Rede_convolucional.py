@@ -6,7 +6,7 @@ import dataset
 
 
 
-
+#ANOTAÇõES PARA USO E ENTENDIMENTO
 #Camadas Convolucionais (Con layers): núcleo da rede neural, exxtrai as características de uma imagem, como a borda, textura, formas, camadas mais profundas e padrões maix complexos.
 #nn.Conv2d(Entrada:3, Saída:64, Filtra por uma matriz 3x3: kernel_size = 3, adiciona uma borda: padding = 1)
 
@@ -17,7 +17,7 @@ import dataset
 #nn.MaxPool2d(kernel_size=2, stride=2):Ela pega blocos de 2×2 e mantém apenas o maior valor de cada bloco.
 
 class Rede_convolucional(nn.Module):
-    "Está inutilizada"
+    "Está inutilizada, futuramente gostaria de capacitar uma cnn própria para capacitar"
     def __init__(self, dimensoes_do_embedding = 64):
         super().__init__()
 
@@ -56,7 +56,7 @@ class Rede_convolucional(nn.Module):
             nn.Linear(512, 256),
             nn.BatchNorm1d(256),
             nn.ReLU(inplace= True),
-            nn.Dropout(0.5), #Apagar menos neuronios
+            nn.Dropout(0.5), #Apagar menos neuronios?
             nn.Linear(256, dimensoes_do_embedding)
         )
     def forward(self, x):
