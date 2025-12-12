@@ -59,7 +59,7 @@ dataset/
         img2.jpg ...
     ...
 
-  ** Projeto desenvolvido por:**
+  **Projeto desenvolvido por:**
 Luís Augusto Bezerra Campos
 aplicações de conceitos de visão computacional, reconhecimento facial e deep learning.
 
